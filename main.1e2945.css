@@ -1272,7 +1272,7 @@ pre .css ~ * .id {
       font-family: Roboto, "Roboto", serif; }
     .tools-col .tools-section .search-wrap .icon {
       position: absolute;
-      right: 0;
+      right: 32px;
       top: 7px;
       color: #fff;
       cursor: pointer; }
