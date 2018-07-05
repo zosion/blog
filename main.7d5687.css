@@ -2344,7 +2344,7 @@ pre .css ~ * .id {
     position: absolute;
     width: 100%;
     z-index: 2;
-    background: #4d4d4d; }
+    background: transparent !important; }
   #mobile-nav #header {
     padding: 10px 0 0 0; }
     #mobile-nav #header .profilepic {
@@ -2397,7 +2397,7 @@ pre .css ~ * .id {
         color: #a0a0a0; }
         .header-menu li a.active {
           color: #eaeaea;
-          background: #a0a0a0; }
+          background: #82a9ce; }
   .profilepic {
     text-align: center;
     display: block;
@@ -2422,7 +2422,7 @@ pre .css ~ * .id {
     transition: 0.3s; }
   .header-subtitle {
     text-align: center;
-    color: #999;
+    color: #fff;
     font-size: 14px;
     line-height: 25px;
     overflow: hidden;
