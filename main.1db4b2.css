@@ -1466,8 +1466,7 @@ pre .css ~ * .id {
     border-radius: 2px;
     transition: background 0.3s; }
     .article-more-link a:hover {
-      color: #5ea3ea;
-      text-decoration: underline; }
+      color: #5ea3ea; }
     .article-more-link a.hidden {
       visibility: hidden; }
 
@@ -1690,6 +1689,12 @@ pre .css ~ * .id {
 
 #SOHUCS #SOHU_MAIN .module-cmt-list .block-cont-gw {
   border-bottom: 1px dashed #c8c8c8 !important; }
+
+#gitment-ctn .gitment-root-container .gitment-header-container .gitment-header-issue-link {
+  display: none; }
+
+#gitment-ctn .gitment-root-container .gitment-footer-container {
+  display: none; }
 
 .share-wrap {
   min-height: 20px; }
