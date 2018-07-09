@@ -189,7 +189,7 @@
 					}
 				});
 
-				if (item.tags[0].name != 'Daily' && type === 'title' && matchTitle || type === 'tag' && matchTags) {
+				if (item.tags[0].name != 'Daily' && (type === 'title' && matchTitle || type === 'tag' && matchTags)) {
 					item.isShow = true;
 				} else {
 					item.isShow = false;
@@ -209,9 +209,10 @@
 			return res.json();
 		}).then(function (data) {
 			data.forEach(function (em) {
-				em.tags.forEach(function (v) {
-					if (v.name == 'Daily') {
+				em.tags.forEach(function (t) {
+					if (t.name == 'Daily') {
 						em.isShow = false;
+						return;
 					} else {
 						em.isShow = true;
 					}
