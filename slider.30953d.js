@@ -209,7 +209,13 @@
 			return res.json();
 		}).then(function (data) {
 			data.forEach(function (em) {
-				em.isShow = true;
+				em.tags.forEach(function (v) {
+					if (v.name == 'Daily') {
+						em.isShow = false;
+					} else {
+						em.isShow = true;
+					}
+				});
 			});
 			app.$set('items', data);
 			// 搜索
