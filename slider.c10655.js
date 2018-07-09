@@ -189,7 +189,7 @@
 					}
 				});
 
-				if (type === 'title' && matchTitle || type === 'tag' && matchTags) {
+				if (item.tags[0].name != 'Daily' && type === 'title' && matchTitle || type === 'tag' && matchTags) {
 					item.isShow = true;
 				} else {
 					item.isShow = false;
