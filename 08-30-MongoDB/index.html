@@ -559,7 +559,7 @@
 <li>db.collection.insertMany():向指定集合中插入多条文档数据</li>
 </ul>
 <h3 id="更新文档"><a href="#更新文档" class="headerlink" title="更新文档"></a>更新文档</h3><h4 id="update"><a href="#update" class="headerlink" title="update()"></a>update()</h4><p>MongoDB 使用 <strong>update()</strong> 和 <strong>save()</strong> 方法来更新集合中的文档<br>update() 方法用于更新已存在的文档</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.collection.update(</span><br><span class="line">   &lt;query&gt;,</span><br><span class="line">   &lt;update&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     upsert: &lt;boolean&gt;,</span><br><span class="line">     multi: &lt;boolean&gt;,</span><br><span class="line">     writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.collection.update(</span><br><span class="line">   &lt;query&gt;,</span><br><span class="line">   &lt;update&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     upsert: <span class="xml"><span class="tag">&lt;<span class="name">boolean</span>&gt;</span>,</span></span><br><span class="line">     multi: &lt;boolean&gt;,</span><br><span class="line">     writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <p>参数说明：</p>
 <ul>
 <li><strong>query</strong> : update的查询条件，类似sql update查询内where后面的。</li>
@@ -586,7 +586,7 @@
 <li>db.collection.updateMany() 向指定集合更新多个文档</li>
 </ul>
 <h4 id="save"><a href="#save" class="headerlink" title="save()"></a>save()</h4><p>save() 方法通过传入的文档来替换已有文档</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.collection.save(</span><br><span class="line">   &lt;<span class="built_in">document</span>&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     writeConcern: &lt;document&gt;</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.collection.save(</span><br><span class="line">   &lt;<span class="built_in">document</span>&gt;,</span><br><span class="line">   &#123;</span><br><span class="line">     writeConcern: <span class="xml"><span class="tag">&lt;<span class="name">document</span>&gt;</span></span></span><br><span class="line"><span class="xml">   &#125;</span></span><br><span class="line"><span class="xml">)</span></span><br></pre></td></tr></table></figure>
 <p>参数说明：</p>
 <ul>
 <li><strong>document</strong> : 文档数据。</li>
@@ -959,6 +959,15 @@
   
 <nav id="article-nav">
   
+    <a href="/09-04-Koa/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Koa
+        
+      </div>
+    </a>
+  
   
     <a href="/07-16-山口百惠/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">山口百惠</div>
@@ -1117,11 +1126,11 @@ gitment.render('gitment-ctn')
           <ul class="article-tag-list" q-show="showTags">
              
                 <li class="article-tag-list-item">
-                  <a href="javascript:void(0)" class="js-tag color2">Essays</a>
+                  <a href="javascript:void(0)" class="js-tag color4">Learning</a>
                 </li>
              
                 <li class="article-tag-list-item">
-                  <a href="javascript:void(0)" class="js-tag color4">Learning</a>
+                  <a href="javascript:void(0)" class="js-tag color2">Essays</a>
                 </li>
              
                 <li class="article-tag-list-item">
